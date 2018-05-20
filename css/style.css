@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+.timer {
+  position: absolute;
+  top: 680px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#lives {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#lives p {
+  display: inline;
+  font-size: 30px;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  background-color: #ca6924;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0.9;
+  border-radius: 20px;
+  display: none;
+}
+
+#gameOver {
+  padding-top: 10em;
+}
+
+#charSelect {
+  display: block;
+  width: 570px;
+  height: 310px;
+}
+.box ul {
+  -webkit-padding-start: 0px;
+}
+.box li {
+  list-style: none;
+  display: inline;
+  padding-left: 0px !important;
+}
+
+#light {
+  z-index: -1;
+  top: 80px;
+  left: 25px;
+  position: absolute;
+}
+
+h2 {
+  animation: blink_effect 1s infinite;
+}
+
+@keyframes blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

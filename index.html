@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    <div id='lives'>
+      <img id="heart" src="images/Heart.png" alt="lives" width="40">
+      <p id="livesNum">X3</p>
+      <img src="images/Star1.png" alt="stars" width="50">
+      <p id="starNum">0</p>
+    </div>
+    <!--This will apear if player win!-->
+    <div class="box" id="ending">
+      <h1>YOU WON</h1>
+      <br />
+      <br />
+      <p>YOU HAVE COLLECTED <br />
+      	<span id="starNumEnd">0</span><br />
+      	 <img src="images/Star1.png" alt="stars" width="50"></p>
+      <h2>PRESS SPACE TO PLAY</h2>
+    </div>
+    <!--This will apear if player loose-->
+    <div class="box" id="gameOver">
+      <h1>GAME OVER</h1>
+      <h2>PRESS SPACE TO PLAY</h2>
+    </div>
+    <div class="timer">00:00</div>
+    <!--This will apear before the game start for character selecting-->
+    <div class="box" id="charSelect">
+      <h1>SELECT YOUR HERO</h1>
+      <ul>
+        <li><img src="images/char-boy.png" alt="hero-1"></li>
+        <li><img src="images/char-cat-girl.png" alt="hero-2"></li>
+        <li><img src="images/char-horn-girl.png" alt="hero-3"></li>
+        <li><img src="images/char-pink-girl.png" alt="hero-4"></li>
+        <li><img src="images/char-princess-girl.png" alt="hero-5"></li>
+      </ul>
+      <div id="light">
+        <img src="images/Selector.png" alt="">
+      </div>
+      <h2>PRESS ENTER TO START</h2>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>
